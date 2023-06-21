@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-fonts);
+}
+body {
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-fonts: "Roboto", sans-serif;
+  --primary-col: #eb586f;
+}
+
+.navigation{
+    background-color: #fff;       
+}
+.navigation .active {
+  color: var(--primary-col) !important;
+}
+.navigation .logo {
+  width: 34%;
+}
+.navigation .nav-link {
+  color: black;
+  padding: 0px 20px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.navigation .nav-link:hover {
+  color: var(--primary-col);             
+  transition: 0.2s linear;
+}
+
+@media (max-width: 991px) {
+  .navigation .nav-link {
+    padding: 6px 3px;
+  }
+
+  .navigation .navbar-toggler {
+    border: 0;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("../images/toggle_icon.svg");
+  }
+
+  .navbar-light .navbar-toggler {
+    color: transparent !important;
+    border-color: transparent !important;
+  }
+}
+
+/* main sec */
+.main-sec{
+    margin-top: 80px !important;           
+}
+.main-sec .aside-box li{
+    list-style: none;    
+    border-bottom: 1px solid #fff;   
+}
+.main-sec .aside-box a{
+    text-decoration: none;  
+    color: #ffff;         
+    font-weight: 400;
+    font-size: 16px;  
+    letter-spacing: 1px;        
+}
+.main-sec .aside-box a i{
+    color: var(--primary-col);       
+}
+.aside-box{
+    border-radius: 8px;    
+}
+
+
+/* cards */
+.card {
+    border: 0;
+    overflow: hidden;
+    background-color: #ffff;
+    transition: all 0.3s ease-in;
+    /* box-shadow: 0px 4px 8px rgba(134, 151, 168, 0.1); */
+    /* box-shadow: 0 13px 15px rgba(0, 0, 0, 0.2); */
+    border-radius: 8px;
+    padding: 15px;
+  }
+  .card_box {
+    padding: 0 12px;
+  }
+
+  .buyon_btn{
+    /* background: #000 !important;  */    
+    display: inline-block;    
+  border: 0;  
+  border-radius: 5px ;   
+  font-size: 14px;    
+  padding: 9px 20px;        
+  font-family: var(--primary-fonts);  
+  letter-spacing: 1px;  
+  }
+  .buyon_btn:hover{
+    background-color: #000 !important;           
+  }
+
+
+  .buyon_btn:focus{           
+    box-shadow: inherit !important;    
+}  
+
+
+
+/* footer starts */
+.footer ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.subscribe-form input:focus-visible {
+  outline: 0 !important;
+}
+
+#footer-section {
+  /* background: #000;  */    
+  position: relative;
+  color: #fff !important;
+ 
+}
+
+.footer_btn {
+  background: var(--primary-col);   
+  border: 0;
+}
+
+.footer_btn:hover {
+    background: var(--primary-col);   
+  transition: 0.3s ease-in; 
+}
+
+
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 28px;
+}
+
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+}
+
+.footer-social-icon li {
+  width: 40px;
+  height: 40px;
+  list-style: none;
+  margin-right: 13px;
+  padding: 10px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.footer-social-icon .f_col {
+  background: #3b5998;
+}
+
+.footer-social-icon .t_col {
+  background: #00acee;
+}
+
+.footer-social-icon .l_col {
+  background: #0072b1;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: var(--primary-col);
+}
+
+.footer-widget ul li {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+  color: var(--primary-col);
+}
+
+.footer-widget ul li a {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.footer-widget ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-col);
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 8px 18px;
+  border: 1px solid #707070;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+
+.copyright-area {
+  background: #151414;
+  padding: 25px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffff;
+}
+
+.copyright-text p a {
+  color: #ff5e14;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+  color: #ff5e14;
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+@media (max-width: 991px) {
+  .mt_custom {
+    padding-top: 24px;
+  }
+
+  .single-cta {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-logo img {
+    max-width: 175px;
+  }
+
+  .template-card .buttons a {
+    padding: 9px 12px;
+  }
+
+  .template-card .side_btn {
+    justify-content: space-between;
+  }
+
+  .template-card .side_btn .btn_22 {
+    margin-left: 0 !important;
+  }
+
+  .template-card .side_btn .btn_22 a {
+    padding: 9px 22px;
+  }
+
+  .price_box {
+    padding: 0;
+  }
+
+  .btn_b {
+    width: 194px;
+  }
+}
+
+/* bottom to top button */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 999;
+}
+
+.bottom_btn {
+  display: block;
+  background: #ff5e14;
+  padding: 3px 13px;
+  font-size: 25px;
+  font-weight: 700;
+  border: 0;
+}
+
+.bottom_btn:hover {
+  background-color: #ff5e14;
+}
+
+.btn-check:focus + .btn-danger,
+.btn-danger:focus {
+  box-shadow: inherit;
+}
+
+.btn-check:active + .btn-danger:focus,
+.btn-check:checked + .btn-danger:focus,
+.btn-danger.active:focus,
+.btn-danger:active:focus,
+.show > .btn-danger.dropdown-toggle:focus {
+  box-shadow: inherit !important;
+}
