@@ -229,7 +229,7 @@ body {
 .footer-widget ul li a {
   color: #fff;
   text-transform: capitalize;
-  text-decoration: none;
+  text-decoration: none;               
 }
 
 .footer-widget ul li a:hover {
